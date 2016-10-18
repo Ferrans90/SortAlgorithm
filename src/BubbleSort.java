@@ -1,9 +1,10 @@
 
 public class BubbleSort {
-  public static void Sort(int[] array) {
+  // 冒泡排序：将大数向数组右侧移动
+  public static void sort(int[] array) {
     int size = array.length;
-    for (int i = 0; i < size - 1; ++i) {
-      for (int j = 0; j < size - 1 - i; ++j) {
+    for (int i = size - 1; i > 1; --i) { // 外循环：确定内循环冒泡比较次数，从何size-1次到2次
+      for (int j = 0; j < i; ++j) {
         if (array[j] > array[j + 1]) {
           swap(array, j, j + 1);
         }
