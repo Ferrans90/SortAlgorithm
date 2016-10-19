@@ -1,5 +1,8 @@
 public class SelectSort {
   // 选择排序：从数组中选择最小值排到有序队列中，与冒泡排序相反
+  // 时间复制度：o(n2)
+  // 空间复杂度：o(1)
+  // 不稳定排序
   public static void sort(int[] array) {
     int size = array.length;
     for (int i = 0; i < size - 1; ++i) { // 外循环：选择最小值n-1次

@@ -1,6 +1,9 @@
 
 public class QuickSort {
   // 快排
+  // 时间复杂度：o(nlog2n)
+  // 空间负责度：o(log2n)
+  // 不稳定排序
   public static void sort(int[] array) {
     recurSort(array, 0, array.length-1);
   }
